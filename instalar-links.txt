@@ -1,0 +1,2 @@
+./configure --enable-graphics --enable-javascript --x-libraries=/usr/lib/X11
+--x-includes=/usr/include/X11

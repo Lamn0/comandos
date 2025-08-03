@@ -1,0 +1,8 @@
+Time zone
+Set the time zone:
+
+ # ln -sf /usr/share/zoneinfo/<Region>/<City> /etc/localtime
+and Run hwclock to generate /etc/adjtime:
+
+ # hwclock --systohc
+This command assumes the hardware clock is set to UTC.

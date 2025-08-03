@@ -1,0 +1,7 @@
+y - Copia uma linha.
+p - Cola a linha copiada.
+v - Modo visual(para selecionar texto).
+:w - Escreve as mudanças(write).
+:q - Sai.
+:wq - Escreve as mudanças e depois sai.
+vimtutor - Um turotial sobre o vim.

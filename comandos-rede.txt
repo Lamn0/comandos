@@ -1,0 +1,3 @@
+net-tools - Instala o ifconfig.
+ifconfig - Mostra informações da rede.
+

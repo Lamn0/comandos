@@ -1,0 +1,2 @@
+youtube-dl -F URL - Exibe os formatos dinponíveis.
+mpv $(youtube-dl -f [NÚMERO DO FORMATO] -g "URL")

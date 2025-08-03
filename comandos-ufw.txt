@@ -1,0 +1,31 @@
+[COMANDOS]:
+
+ufw enable - Habilita.
+
+ufw status verbose - Mostra o status e as regras do firewall.
+
+ufw default deny incoming - Nega todas as entradas por padrão.
+
+ufw default allow outgoing - Permite todas as saídas por padrão.
+
+ufw allow ssh - Permite o acesso por ssh.
+
+ufw allow 22 - Permite o acesso pela porta 22, normalmente usada para conexões ssh.
+
+ufw allow 6000:6007/tcp|
+                       |- Seleciona uma faixa específica de portas.
+ufw allow 6000:6007/udp|
+
+ufw allow from 203.0.113.4 - Permite conexões de um endereço ip específico.
+
+ufw allow from 203.0.113.4 to any port 22 - Permite conexões de um ip por uma porta específica.
+
+ufw allow from 203.0.113.0/24 - Permite conexão a uma sub-rede de 203.0.113.1 a 203.0.113.254.
+
+[PORTAS]:
+
+porta 80: O HTTP, que é a porta que os servidores Web não criptografados utilizam.
+porta 443: O HTTPS, que é a porta que os servidores Web criptografados utilizam.
+
+
+

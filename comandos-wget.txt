@@ -1,0 +1,11 @@
+wget -c URL - Baixa o arquivo da URL.
+wget -r URL - Baixa todo o site da url.
+wget -r -A "[formato]" URL - Baixa todos os aquivos da URL com o formato desejado
+wget -i arquivo.txt - Baixa todos os arquivos das URLs presentes no documento txt.
+wget -nd -P [dir de destino] -A [formatos]
+wget -c -nd -r -P m -A   https://cdn.mangayabu.top/mangas/martial-peak/capitulo-77/
+wget -nd URl = Baixa somento o arquivo e não os diretórios.
+
+[Baixar mangas do muito manga]
+wget https://cdn.statically.io/img/imgs2.muitomanga.com/f=auto/imgs/player-starting-from-today/1/{1..23}.jpg
+

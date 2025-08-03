@@ -1,0 +1,5 @@
+sudo pacman -Sc - Limpa o cache do pacote pacman.
+df -h - Mostra informações sobre a mememoria de determinado diretório/partição.
+du -h - Mostra o o tamanha de determinado diretório.
+du -sh
+du -h /home/luiz/ | grep '^\s*[0-9\.]\+M' | sort -n - Exibe o tamanho dos arquivos e diretórios do maior para o menor.

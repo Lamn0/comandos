@@ -1,0 +1,3 @@
+shift + PrtSC
+ctrl + insert - Copia.
+shift + insert - Cola.

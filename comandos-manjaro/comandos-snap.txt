@@ -1,0 +1,6 @@
+git clone https://aur.archlinux.org/snapd.git - Clona o git do pacote.
+cd snapd - Vai até o diretório.
+makepkg -si - Compila.
+sudo systemctl enable --now snapd.socket - Faz alguma coisa.
+sudo ln -s /var/lib/snapd/snap /snap - Faz outra coisa.
+sudo snap install snap-store - Instala o snap store.

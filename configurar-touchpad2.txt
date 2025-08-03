@@ -1,0 +1,16 @@
+Section "InputClass"
+    Identifier "touchpad"
+    Driver "libinput"
+    MatchIsTouchpad "on"
+    MatchIsPointer "on"
+    Option "Tapping" "on"
+    Option "TappingButtonMap" "lmr"
+    Option "TapButton1" "1"
+    Option "TapButton2" "3"
+    Option "TapButton3" "2"
+    Option "Tapping" "on"
+    Option "ClickMethod" "clickfinger" 
+    Option "AccelSpeed" "0.2" 
+    Option "AccelProfile" "adaptive" 
+EndSection
+

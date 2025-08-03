@@ -1,0 +1,3 @@
+ls -a	-Exibe arquivos ocultos
+ls -l	-Exibe os arquivos e suas permissões
+ls -t	-Exibe os arquivos por ordem de modificação

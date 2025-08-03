@@ -1,0 +1,1 @@
+whereis nome-do-programa - Mostra o local do executável.

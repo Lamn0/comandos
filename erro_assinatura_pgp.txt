@@ -1,0 +1,5 @@
+sudo pacman-key -r 2EBF997C15BDA244B6EBF5D84773BD5E130D1D45
+sudo pacman-key --lsign-key 2EBF997C15BDA244B6EBF5D84773BD5E130D1D45
+sudo pacman-key --refresh-keys
+
+gpg --keyserver hkp://keyserver.ubuntu.com --search-keys 031F7104E932F7BD7416E7F6D2845E1305D6E801

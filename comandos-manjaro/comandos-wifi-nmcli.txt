@@ -1,0 +1,7 @@
+nmcli device - Mostra uma lista de  dispositivos de rede.
+nmcli device wifi list - Mostra as redes disponíveis.
+nmcli device wifi  connect [SSID] password [senha] - Conecta a uma rede.
+nmcli device wifi  connect [SSID] password [senha] hidden yes.
+nmcli device disconnect if name eth0 - Desconecta uma interface.
+nmcli connection show - Mostra uma lista de UUIDs.
+nmcli radio wifi off - Desliga o wifi.

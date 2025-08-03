@@ -1,0 +1,6 @@
+Instalar pacote:
+sbopkg -i pacote1, pacote2
+pesquisar por um pacote:
+sbopkg -g pacote
+pesquisar dependencias de um pacote:
+sbopkg -s pacote | grep REQUIRES

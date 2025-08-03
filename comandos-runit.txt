@@ -1,0 +1,8 @@
+runit
+Enable ufw
+ root # ln -s /etc/runit/sv/ufw /run/runit/service
+
+Start ufw
+ root # sv up/down/restart ufw
+
+sv status /run/runit/service/* - Ver os serviços es execução.

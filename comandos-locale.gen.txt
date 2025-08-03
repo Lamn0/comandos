@@ -1,0 +1,8 @@
+Locale
+Uncomment en_US.UTF-8 UTF-8 and other needed localizations in /etc/locale.gen, and generate them with:
+
+ # locale-gen
+Set the LANG variable in /etc/locale.conf accordingly, for example:
+
+ #/etc/locale.conf
+ LANG=en_US.UTF-8

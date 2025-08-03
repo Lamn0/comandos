@@ -1,0 +1,64 @@
+export PATH=$PATH:/home/luiz/Scripts - Adiciona o diretório ao PATH.
+PATH = $(echo "$PATH" | sed -e 's/:\/home\/usuario\/bin//') - Exclui.
+
+[Estrutura de condicionais]
+Estrutura do if: 
+if...then...elif...else...fi 
+
+Sintaxe:
+if [ TESTE ]; then
+	comandos-teste... 
+elif [ SENAO-TESTE ]; then
+	comandos-senao-teste...
+else
+	comandos-senao...
+fi
+
+[Expressões primárias]
+[-a ARQUIVO] Verdadeiro se o ARQUIVO existe. 
+[-b ARQUIVO] Verdadeiro se o ARQUIVO existe e é um arquivo de bloco especial. 
+[-c ARQUIVO] Verdadeiro se o ARQUIVO existe e é um arquivo de caráter especial. 
+[-d ARQUIVO] Verdadeiro se o ARQUIVO existe e é um diretório. 
+[-e ARQUIVO] Verdadeiro se o ARQUIVO existe. 
+[-f ARQUIVO] Verdadeiro se o ARQUIVO existe e é um arquivo regular. 
+[-g ARQUIVO] Verdadeiro se o ARQUIVO existe e seu bit SGID está definido. 
+[-h ARQUIVO] Verdadeiro se o ARQUIVO existe e é um link simbólico. 
+[-k ARQUIVO] Verdadeiro se o ARQUIVO existe e seu bit sticky está definido. 
+[-p ARQUIVO] Verdadeiro se o ARQUIVO existe e é um pipe nomeado (FIFO). 
+[-r ARQUIVO] Verdadeiro se o ARQUIVO existe e é legível. 
+[-s ARQUIVO] Verdadeiro se o ARQUIVO existe e tem um tamanho maior que zero. 
+[-t FD] Verdadeiro se descritor de arquivo FD é aberto e refere-se a um terminal. 
+[-u ARQUIVO] Verdadeiro se o ARQUIVO existe e seu SUID (set user ID) bit é definido. 
+[-w ARQUIVO] Verdadeiro se o ARQUIVO existe e é gravável. 
+[-x ARQUIVO] Verdadeiro se o ARQUIVO existe e é executável. 
+[-o ARQUIVO] Verdadeiro se o ARQUIVO existe e é de propriedade do ID de usuário efetivo. 
+[-G ARQUIVO] Verdadeiro se o ARQUIVO existe e é de propriedade do ID de grupo efetiva. 
+[-L ARQUIVO] Verdadeiro se o ARQUIVO existe e é um link simbólico. 
+[-N ARQUIVO] Verdadeiro se o ARQUIVO existe e foi modificado desde a última leitura. 
+[-S ARQUIVO] Verdadeiro se o ARQUIVO existe e é um soquete. 
+[ARQUIVO1 nt ARQUIVO2] Verdadeiro se ARQUIVO1 foi alterado mais recentemente do que ARQUIVO2, ou se ARQUIVO1 existe e ARQUIVO2 não. 
+[ARQUIVO1 -ot ARQUIVO2] Verdadeiro se ARQUIVO1 é mais velho do que ARQUIVO2, ou é ARQUIVO2 existe e ARQUIVO1 não. 
+[ARQUIVO1 -ef ARQUIVO2] Verdadeiro se ARQUIVO1 e ARQUIVO2 referem-se aos mesmos números de dispositivo e inode. 
+[-o OptionName ] Verdadeiro se a opção shell "OptionName" está ativada. 
+[-z TEXTO] Verdadeiro do comprimento se "TEXTO" é zero. 
+[-n TEXTO] ou [TEXTO] É verdade, se o comprimento de "TEXTO" é diferente de zero. 
+[TEXTO1 = TEXTO2] Verdadeiro se os textos são iguais. "=" Pode ser usado em vez de "==" para o estrito cumprimento POSIX. 
+[TEXTO1 != TEXTO2] Verdadeiro se os texto não são iguais. 
+[TEXTO1 < TEXTO2] Verdadeiro se "texto1" tipo antes "texto2" Lexicograficamente no local atual. 
+[TEXTO1 > TEXTO2] Verdadeiro se "texto1" tipos depois de "texto2" Lexicograficamente no local atual.
+
+
+[Operadores aritméticos]
+[EXP1 -eq EXP2] Verdadeiro se EXP1 é igual a EXP2. 
+[EXP1 -ne EXP2] Verdadeiro se EXP1 não é igual a EXP2. 
+[EXP1 -lt EXP2] Verdadeiro se EXP1 é menor que EXP2. 
+[EXP1 -le EXP2] Verdadeiro se EXP1 é menor ou igual a EXP2. 
+[EXP1 -gt EXP2] Verdadeiro se EXP1 é maior que EXP2. 
+[EXP1 -ge EXP2] Verdadeiro se EXP1 é maior ou igual a EXP2.
+
+[Operadores lógicos]
+[EXP1 -o EXP2] Verdadeiro se EXP1 ou EXP2 for verdadeiro. 
+[EXP1 -a EXP2] Verdadeiro se EXP1 e EXP2 forem verdadeiros. 
+[[EXP1 || EXP2]] Verdadeiro se EXP1 ou EXP2 for verdadeiro. (Somente expansão) 
+[[EXP1 && EXP2]] Verdadeiro se EXP1 e EXP2 forem verdadeiros. (Somente expansão) 
+[ ! EXP  ] Verdadeiro se EXP for falso. ! Não lógico (NOT)

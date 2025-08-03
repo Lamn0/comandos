@@ -1,0 +1,9 @@
+Install:
+	alsa-utils
+	pulseaudio
+	pulseaudio-alsa
+	pavucontrol
+
+Start:
+	pulseaudio --start ou start-pulseaudio-x11
+	

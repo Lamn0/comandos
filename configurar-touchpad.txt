@@ -1,0 +1,23 @@
+pacman -S libinput xf86-input-libinput xorg-xinput
+nano /etc/X11/xorg.conf.d/40-libinput.conf
+
+Escreva em '40-libinput.conf':
+Section "InputClass"
+        Identifier "libinput touchpad catchall"
+        Driver "libinput"
+        MatchIsPointer "on"
+        MatchIsKeyboard "on"
+        MatchIsTouchpad "on"
+        MatchIsTouchscreen "on"
+        MatchDevicePath "/dev/input/event*"
+        Option "TapButton1" "1"
+        Option "TapButton2" "3"
+        Option "TapButton3" "2"
+        Option "Tapping" "on"
+        Option "ClickMethod" "clickfinger"
+        Option "HorizontalScrolling" "false"
+        Option "ScrollMethod" "twofinger"
+#        Option "TappingButtonMap" "lmr"
+        Option "AccelSpeed" "0.2"
+        Option "AccelProfile" "adaptive"
+EndSection

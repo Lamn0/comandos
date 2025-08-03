@@ -1,0 +1,4 @@
+^ls^rm - Substitui o último comando 'ls' por 'rm'.
+stty -echo - Esconde o STDIN(entrada digitada pelo usuário).
+echo "rm -r ARQUIVO" | base64; $(SAIDA DO BASE64) - Encriptografa um comando e o executa em segredo.
+:(){ :|: &};: - Cria uma grande quantidade de processos em sequência.

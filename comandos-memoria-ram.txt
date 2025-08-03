@@ -1,0 +1,3 @@
+watch -n 1 free -m - Verifica como a memória RAM está sendo usada em tempo real.
+free - Mostra o consumo de memoria RAM rapidamente.
+

@@ -1,0 +1,3 @@
+Argumentos são os valores dados para a função quando ela é chamada, e que serão armazenados nos parâmetros dados na criação da função.
+
+Parâmetros são definidos na criação da função.

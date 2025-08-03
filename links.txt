@@ -1,0 +1,1 @@
+export CFLAGS="$CFLAGS -I/usr/include/X11" export CPPFLAGS="$CFLAGS -I/usr/include/X11" export LDFLAGS="$LDFLAGS -L/usr/lib/X11"

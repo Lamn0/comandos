@@ -1,0 +1,11 @@
+gpg --full-generate-key - Gera uma chave.
+
+gpg --output [arquivo de saída] --gen-revoke [últimos 16 caracteres da chave ou o email] - Revoga uma chave.
+
+gpg --output [arquivo de saída] --export --armor [últimos 16 caracteres da chave ou o email] - Exporta chave pública para um arquivo.
+
+gpg --output [arquivo do saída] --export-secret-keys --armor [últimos 16 caracteres da chave ou o email] - Exporta chave privada para um arquivo.
+
+gpg --symmetric [nome do arquivo] - Criptocrafa um arquivo contendo a chave gpg.
+
+gpg --output [arquivo de saída] -d [nome do arquivo a ser descompactado] - Descompacta um arquivo.

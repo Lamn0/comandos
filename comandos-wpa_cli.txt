@@ -1,0 +1,91 @@
+add_network									|
+1										|
+set_network 1 ssid “HUAWEI” // ssid						|
+OK										|
+set_network 1 key_mgmt WPA-PSK // Definir método de gerenciamento de senha	|
+OK										|
+set_network 1 psk “xx123456” // Definir senha					|
+OK										|
+save_config // Salvar configuração						|
+OK										|
+enable_network 1 // Habilitar rede						|
+OK										|
+										|
+---------------------------------------------------------------------------------
+
+These commands can be supplied on the command line or at a prompt when operating interactively.
+status
+ 	Report the current WPA/EAPOL/EAP status for the current interface.
+ifname
+ 	Show the current interface name. The default interface is the first interface found in the socket path.
+ping	Ping the wpa_supplicant(8) utility. This command can be used to test the status of the wpa_supplicant(8) daemon.
+mib	Report MIB variables (dot1x, dot11) for the current interface.
+help	Show usage help.
+interface [ifname]
+ 	Show available interfaces and/or set the current interface when multiple interfaces are available.
+level debug_level
+ 	Change the debugging level in wpa_supplicant(8). Larger numbers generate more messages.
+license
+ 	Display the full license for wpa_cli.
+logoff
+ 	Send the IEEE 802.1X EAPOL state machine into the "logoff" state.
+logon	Send the IEEE 802.1X EAPOL state machine into the "logon" state.
+set [settings]
+ 	Set variables. When no arguments are supplied, the known variables and their settings are displayed.
+pmksa	Show the contents of the PMKSA cache.
+reassociate
+ 	Force a reassociation to the current access point.
+reconfigure
+ 	Force wpa_supplicant(8) to re-read its configuration file.
+preauthenticate BSSID
+ 	Force preauthentication of the specified BSSID.
+identity network_id identity
+ 	Configure an identity for an SSID.
+password network_id password
+ 	Configure a password for an SSID.
+new_password network_id password
+ 	Change the password for an SSID.
+PIN network_id pin
+ 	Configure a PIN for an SSID.
+passphrase network_id passphrase
+ 	Configure a private key passphrase for an SSID.
+bssid network_id bssid
+ 	Set a preferred BSSID for an SSID
+blacklist [bssid | clear]
+ 	Add a BSSID to the blacklist. When invoked without any extra arguments, display the blacklist. Specifying clear causes wpa_cli to clear the blacklist.
+list_networks
+ 	List configured networks.
+select_network network_id
+ 	Select a network and disable others.
+enable_network network_id
+ 	Enable a network.
+disable_network network_id
+ 	Disable a network.
+add_network
+ 	Add a network.
+remove_network network_id
+ 	Remove a network.
+set_network [network_id variable value]
+ 	Set network variables. Shows a list of variables when run without arguments.
+get_network network_id variable
+ 	Get network variables.
+disconnect
+ 	Disconnect and wait for reassociate/reconnect command before connecting.
+reconnect
+ 	Similar to reassociate, but only takes effect if already disconnected.
+scan	Request new BSS scan.
+scan_results
+ 	Get the latest BSS scan results. This command can be invoked after running a BSS scan with scan.
+bss [idx | bssid]
+ 	Get a detailed BSS scan result for the network identified by "bssid" or "idx".
+otp network_id password
+ 	Configure a one-time password for an SSID.
+terminate
+ 	Force wpa_supplicant(8) to terminate.
+interface_add ifname [confname driver ctrl_interface driver_param bridge_name]
+ 	Add a new interface with the given parameters.
+interface_remove ifname
+ 	Remove the interface.
+interface_list
+ 	List available interfaces.
+quit	Exit wpa_cli.

@@ -1,0 +1,6 @@
+fdisk -l - Exibe as partições.
+lsblk - Exibe as partições.
+sudo umount /dev/sdx - Desmonta o pedrive.
+sudo mkfs.vfat -I /dev/sdx1 - Formata determinado pendrive para fat32.
+sudo dd if=/local/da/imagem.iso of=/dev/sdX status=progress && sync - Grava a imagem no pendrive.
+

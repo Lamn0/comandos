@@ -1,0 +1,18 @@
+- Instale os pacotes 'tor', 'tor-runit' e 'torify'.
+
+- Edite o arquivo /etc/tor/torrc e descomente a linha 'controlport' e mude o valor de 'cookieauthentication' para 0.
+
+- Reinicie o serviço do tor.
+
+- Pronto!
+
+- Para testar:
+	curl ifconfig.me - Irá mostrar o seu ip sem a rede tor.
+	torify curl ifconfig.me 2>/dev/null - Irá mostrar o seu ip depois de passar pela rede tor.
+	torify w3m 'https://check.torproject.org'
+
+- Para forçar o tor a criar um novo circuito:
+	 echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
+
+- Então, você pode usar torify para executar uma solicitação pelo Tor:
+	torify curl -v https://slashdot.org

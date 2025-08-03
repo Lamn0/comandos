@@ -1,0 +1,3 @@
+ps -U [USUÀRIO] - Mostra os processos de um usuário.
+ps -ax - Lista os processos em execução.
+kill -9 [PID] - Finaliza o processo com o PID escolhido.

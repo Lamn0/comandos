@@ -1,0 +1,1 @@
+xbps-install -S surf gstreamer gst-plugins-good gst-libav

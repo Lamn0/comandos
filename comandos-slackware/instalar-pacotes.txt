@@ -1,0 +1,5 @@
+pkgtool - Ferramenta para gerenciar pacotes.
+installpkg nome_do_pacote.tgz - Instala um pacote .tgz diretamente.
+removepkg nome_do_pacote.tgz - Remove um pacote diretamente.
+upgradepkg nome_do_pacote - Atualiza um pacote já existente.
+rpm2tgz nome_do_pacote.rpm - Converte pacotes de .rpm para .tgz 
